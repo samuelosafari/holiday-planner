@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/* font-family: "Titillium Web", sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+.login-content {
+  margin: 20px;
+  box-shadow: 0 0 20px #ccc;
+  padding: 20px;
+  /* width: 70%; */
+}
+
+.login-formgroup label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.login-formgroup input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  border: 1px solid #000;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 0.7rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid #c29d59;
+  cursor: pointer;
+  background-color: #c29d59;
+  color: #fff;
+  font-weight: bold;
+}
+
+.login-methods {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.loginGoogle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.loginFacebook {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.retrieve-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginPage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.login-img {
+  display: none;
+}
+
+.login-para {
+  text-align: center;
+}
+.login-footer {
+  text-align: center;
+  color: #b8b7b7;
+}
+
+.loginGoogle,
+.loginFacebook {
+  padding: 3px 20px;
+  background-color: #dbe4e1;
+  border-radius: 5px;
+}
+@media screen and (min-width: 980px) {
+  .loginPage-container {
+    display: block;
+  }
+  .login-content {
+    width: 50%;
+    box-shadow: 0 0 0 0;
+  }
+  .login-large {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+  }
+  .login-large img {
+    width: 500px;
+    border-radius: 10px;
+  }
+  .login-img {
+    display: block;
+  }
+  .login-formgroup input {
+    padding: 1rem 2rem;
+  }
+  .login-btn {
+    padding: 1rem 2rem;
+  }
+  .login-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .loginGoogle {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .loginFacebook {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}

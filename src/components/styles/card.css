@@ -1,0 +1,86 @@
+.card img {
+  width: 100%;
+}
+
+.days p,
+.group-size p {
+  margin: 0;
+}
+.days p:first-child,
+.group-size p:first-child {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.duration-days,
+.group-size {
+  display: flex;
+  gap: 7px;
+  font-size: 12px;
+}
+
+.clock {
+  font-size: 30px;
+  color: #c29d59;
+}
+
+.grouped-people {
+  font-size: 30px;
+  color: #c29d59;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
+  padding: 1.5rem 0;
+}
+
+.book-btn {
+  height: 50px;
+  background: #c29d59;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  /* font-size: 16px; */
+  /* line-height: 26px; */
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pricing-tours {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  padding: 1.5rem;
+  border-left: 3px solid #c29d59;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.country-badge {
+  position: absolute;
+  background-color: #c29d59;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  left: 20px;
+  top: 35%;
+}
+
+.card-title {
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+}

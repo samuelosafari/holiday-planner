@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+.q-card-title {
+  border-left: 4px solid #000;
+}
+.q-card-title h3 {
+  margin-left: 15px;
+}
+
+.q-email,
+.q-telphone {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-email,
+.icon-telephone {
+  font-size: 25px;
+  color: #000;
+}
+
+.q-card {
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(194, 157, 89, 0.8),
+      rgba(194, 157, 89, 0.8)
+    ),
+    url(./../../assets/question-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  height: 27rem;
+  font-family: "Titillium Web", sans-serif;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px #ccc;
+}
+
+@media screen and (min-width: 980px) {
+  .q-card-text,
+  .q-email p,
+  .q-telphone p {
+    margin-bottom: 5px;
+  }
+  .q-card {
+    padding: 30px 25px;
+    margin-top: 3rem;
+    height: 260px;
+  }
+}

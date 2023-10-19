@@ -1,0 +1,305 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 1.6rem;
+  /* overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 7rem;
+  box-shadow: 0 0 0 1px rgba(68, 66, 66, 0.1);
+  position: sticky;
+  inset: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.logo img {
+  width: 80%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sec-btn {
+  width: 170px;
+  height: 50px;
+  background: #c29d59;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+.icon {
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.menu {
+  border-color: #c29d59;
+  background-color: #c29d59;
+}
+
+@media screen and (min-width: 920px) {
+  .sec-btn {
+    display: block;
+  }
+}
+
+/* modal menu */
+.menu-modal {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.menu-logo {
+  visibility: hidden;
+}
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+}
+
+.close-menu {
+  border-color: #fff;
+}
+@media screen and (min-width: 920px) {
+  /* .close-menu {
+    border-color: #fff;
+  } */
+
+  .menu-logo {
+    visibility: visible;
+  }
+  /* .menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+  } */
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  .trial {
+    color: #fff;
+  }
+
+  .menu-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-links {
+    padding: 5rem 10rem;
+  }
+
+  .single__menu-icon {
+    border-color: #c29d59;
+    background-color: #c29d59;
+    padding: 5px;
+  }
+
+  .single__menu-icon:hover {
+    border-color: #fff;
+    background-color: #fff;
+  }
+
+  .trial:hover {
+    color: #c29d59;
+  }
+}
+
+.email-submit {
+  border: 2px solid #ccc;
+  display: flex;
+  border-radius: 5px;
+}
+
+.email-submit button {
+  background: #c29d59;
+  color: #fff;
+  line-height: 26px;
+  border: none;
+  outline: none;
+  width: 120px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.email-submit input {
+  border: 0;
+  outline: 0;
+  height: 100%;
+  background: transparent;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.email-submit input::placeholder {
+  color: #ececec;
+  font-size: 16px;
+}
+/* .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.navigate-page ul li {
+  list-style: square;
+  margin-bottom: 1.5rem;
+}
+.navigate-page ul {
+  padding-left: 20px;
+}
+
+/* .footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.policy-management {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.privacy,
+.terms {
+  border-right: 1px solid #fff;
+  /* padding: 5px; */
+}
+
+.footer {
+  color: #fff;
+  background-image: url(./assets/footerbackground1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 80vh;
+  width: 100vw; */
+  padding: 10px 50px;
+}
+
+/* hero */
+.centered-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: #fff;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.menu-right {
+  color: #000;
+}
+
+/* footer */
+.paypal {
+  background-color: blue;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-location {
+  border-left: 3px solid #c29d59;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  margin: 4px;
+}
+
+.geek span {
+  color: #c29d59;
+}
+
+.welcome-hero img {
+  width: 100vw;
+  height: 70%;
+}
+
+.poli p {
+  margin: 0 10px;
+}
+
+.cookie-policy p {
+  margin: 0;
+}
+
+.privacy p {
+  margin-left: 0;
+}
+/* Tour List */
+
+/* Card */
+
+@media screen and (min-width: 980px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

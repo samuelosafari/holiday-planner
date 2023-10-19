@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap");
+
+.carousel .slider-wrapper {
+  height: 120vh;
+}
+.carousel .slide .legend {
+  top: 30%;
+  background-color: transparent;
+  font-size: 60px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.trial-legend {
+  position: absolute;
+  top: 40%;
+
+  /* margin-left: 37%; */
+  /* left: 50%; */
+  color: #fff;
+  position: absolute;
+  /* bottom: 40px; */
+  /* left: 50%; */
+  /* margin-left: -45%; */
+  /* width: 90%; */
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  /* opacity: 0.25; */
+  transition: opacity 0.35s ease-in-out;
+  background-color: #c29d59;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.isit {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .thumb {
+  display: none;
+}
+
+.legend-description {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  /* width: 40%; */
+  font-family: "Titillium Web", sans-serif;
+}

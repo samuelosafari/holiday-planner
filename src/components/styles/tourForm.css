@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+.form-title {
+  border-left: 4px solid #c29d59;
+  margin-bottom: 2rem;
+}
+
+.f-title {
+  font-size: 20px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.tourFormGroupe input,
+.tourFormGroupe select {
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  padding: 1rem 3.5rem;
+  border-radius: 5px;
+  /* background-color: #2b2b2b; */
+}
+
+.tourFormGroupe input::placeholder,
+.tourFormGroupe select::placeholder {
+  font-size: 16px;
+}
+
+.tourFormGroupe {
+  border: 1px solid #000;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-left: 0;
+}
+.form-container {
+  margin: 30px;
+  padding: 50px;
+  box-shadow: 0 0 30px #ccc;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #fff;
+}
+.tform-icons {
+  font-size: 2rem;
+  color: #c29d59;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+}
+
+.tourFormGroupe label {
+  display: block;
+}
+/* .form-flex {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.price-input {
+  display: block;
+}
+
+.tourform-btn {
+  height: 50px;
+  background: #c29d59;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-checkbox {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  accent-color: #c29d59;
+  color: #fff;
+}
+
+.checkbox-flex {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tourFormGroup {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/* font-family: "Titillium Web", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap");
+
+.ab-img1 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.ab-img2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-cadre {
+  padding: 8px;
+  border: 3px solid #c29d59;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-cadre2 {
+  padding: 8px;
+  border: 3px solid #c29d59;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+}
+
+.ab-img2 {
+  position: absolute;
+  top: 270px;
+  left: 240px;
+}
+.about {
+  position: relative;
+}
+
+.about-container {
+  margin: 30px;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.abt-description {
+  margin-top: 120px;
+  /* width: 80%; */
+}
+
+.about-title {
+  border-left: 3px solid #c29d59;
+  margin-bottom: 2rem;
+}
+
+.about-title h4 {
+  color: #c29d59;
+  margin-left: 20px;
+}
+
+.abt-subTitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.abt-btn {
+  width: 170px;
+  height: 50px;
+  background: #c29d59;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 980px) {
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 190px;
+  }
+}
