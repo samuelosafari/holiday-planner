@@ -1,0 +1,39 @@
+.dashtours {
+  width: 80vw;
+}
+
+#services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+#services-table th,
+#services-table td {
+  padding: 8px;
+  border: 1px solid black;
+}
+
+#services-table th {
+  background-color: #ccc;
+}
+
+#services-table td {
+  text-align: center;
+}
+.table-title {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.lIcons {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #c29d59;
+}
+
+.delicon {
+  color: red;
+}

@@ -1,0 +1,55 @@
+.dash-bxs {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+.ddt {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #ccc;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  width: 80vw;
+}
+
+.dash-amt {
+  background-color: rgb(15, 165, 165);
+}
+
+.dash-tour {
+  background-color: cadetblue;
+}
+
+.dash-loged {
+  background-color: yellowgreen;
+}
+
+@media screen and (max-width: 980px) {
+  .dashboard {
+    height: 100vh;
+  }
+  .dash-bxs {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin: 0 auto;
+  }
+  .ddt {
+    height: 300px;
+    flex: 1;
+  }
+
+  .dash-loged {
+    height: 500px;
+  }
+}

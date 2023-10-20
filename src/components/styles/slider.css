@@ -1,19 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap");
 
-.carousel .slider-wrapper {
-  height: 120vh;
+.carousel .thumb {
+  display: none;
 }
+
 .carousel .slide .legend {
-  top: 30%;
+  top: 20%;
   background-color: transparent;
-  font-size: 60px;
+  font-size: 30px;
   font-family: "Cormorant Garamond", serif;
 }
 
+.carousel .slider-wrapper {
+  height: 60vh;
+}
+
+/* .carousel .slider-wrapper {
+  height: 120vh;
+} */
+
 .trial-legend {
   position: absolute;
-  top: 40%;
+  top: 35%;
 
   /* margin-left: 37%; */
   /* left: 50%; */
@@ -21,12 +30,12 @@
   position: absolute;
   /* bottom: 40px; */
   /* left: 50%; */
-  /* margin-left: -45%; */
+  margin-left: 125px;
   /* width: 90%; */
   border-radius: 10px;
   color: #fff;
   padding: 10px;
-  font-size: 60px;
+  font-size: 30px;
   text-align: center;
   /* opacity: 0.25; */
   transition: opacity 0.35s ease-in-out;
@@ -34,30 +43,61 @@
   font-family: "Cormorant Garamond", serif;
 }
 
-.isit {
-  display: flex;
-  justify-content: center;
-}
+@media screen and (min-width: 980px) {
+  .carousel .slider-wrapper {
+    height: 120vh;
+  }
+  .carousel .slide .legend {
+    top: 30%;
+    background-color: transparent;
+    font-size: 60px;
+    font-family: "Cormorant Garamond", serif;
+  }
 
-.carousel .thumb {
-  display: none;
-}
+  .trial-legend {
+    position: absolute;
+    top: 40%;
 
-.legend-description {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  color: #fff;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -45%;
-  width: 90%;
-  border-radius: 10px;
-  color: #fff;
-  padding: 10px;
-  font-size: 16px;
-  text-align: center;
-  /* width: 40%; */
-  font-family: "Titillium Web", sans-serif;
+    /* margin-left: 37%; */
+    /* left: 50%; */
+    color: #fff;
+    position: absolute;
+    /* bottom: 40px; */
+    /* left: 50%; */
+    /* margin-left: -45%; */
+    /* width: 90%; */
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    font-size: 60px;
+    text-align: center;
+    /* opacity: 0.25; */
+    transition: opacity 0.35s ease-in-out;
+    background-color: #c29d59;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .isit {
+    display: flex;
+    justify-content: center;
+  }
+
+  .legend-description {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -45%;
+    width: 90%;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    /* width: 40%; */
+    font-family: "Titillium Web", sans-serif;
+  }
 }

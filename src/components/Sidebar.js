@@ -12,6 +12,8 @@ import { MdFlight, MdSettingsApplications } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import "./../components/styles/dash.css";
 
+import sidelogo from "./../assets/10001.png";
+
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -41,9 +43,9 @@ const Sidebar = ({ children }) => {
     <div className="dcontainer">
       <div style={{ width: isOpen ? "200px" : "60px" }} className="sidebar">
         <div className="top_section">
-          <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
-            Logo
-          </h1>
+          <div style={{ display: isOpen ? "block" : "none" }} className="logo">
+            <img src={sidelogo} alt="" />
+          </div>
           <div style={{ marginLeft: isOpen ? "50px" : "0px" }} className="bars">
             <FaBars onClick={toggle} />
           </div>
