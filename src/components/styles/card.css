@@ -51,8 +51,12 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
+.book-btn:hover {
+  background-color: #151414;
+}
 .pricing-tours {
   margin-top: 2rem;
   display: flex;

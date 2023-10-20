@@ -38,6 +38,11 @@
   background-color: #c29d59;
   color: #fff;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #151414;
 }
 
 .login-methods {

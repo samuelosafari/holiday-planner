@@ -1,9 +1,41 @@
+import { useState, useEffect } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { MdFacebook } from "react-icons/md";
 import holidaylogin from "./../assets/holiday-login.jpg";
 import "./../components/styles/signup.css";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const SIgnupPage = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url: "https://holiday-planner-4lnj.onrender.com/api/v1/auth/signup",
+      data: {
+        fullname: firstName + lastName,
+        email: email,
+        password: password,
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        setFirstName("");
+        setLastName("");
+        setPassword("");
+        setEmail("");
+        localStorage.setItem("token", res.data.access_token);
+        navigate("/login");
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("An Error Occured");
+      });
+  };
   return (
     <div className="signPage-container">
       <div className="signup-container">
@@ -17,24 +49,48 @@ const SIgnupPage = () => {
               sign up to embark on the unforgottable adventure with holiday
               planners
             </p>
-            <form>
+            <form onSubmit={handleSignUp}>
               <div className="sign-formgroup">
                 <label>FirstName</label>
-                <input type="text" placeholder="" />
+                <input
+                  value={firstName}
+                  type="text"
+                  placeholder="first name"
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
               </div>
               <div className="sign-formgroup">
                 <label>LastName</label>
-                <input type="text" placeholder="" />
+                <input
+                  value={lastName}
+                  type="text"
+                  placeholder="last name"
+                  onChange={(e) => setLastName(e.target.value)}
+                />
               </div>
               <div className="sign-formgroup">
                 <label>Email</label>
-                <input type="text" placeholder="example@email.com" />
+                <input
+                  value={email}
+                  type="text"
+                  placeholder="example@email.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
               <div className="sign-formgroup">
                 <label>Password</label>
-                <input type="text" placeholder="Atleast 8 characters" />
+                <input
+                  value={password}
+                  type="password"
+                  placeholder="Atleast 8 characters"
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
+                />
                 <div>
-                  <button className="sign-btn">Sign Up</button>
+                  <button onClick={(e) => handleSignUp(e)} className="sign-btn">
+                    Sign Up
+                  </button>
                 </div>
                 {/* <div className="retrieve-password">
                   <div className="inexistent-box"></div>

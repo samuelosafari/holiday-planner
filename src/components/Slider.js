@@ -7,7 +7,7 @@ import sImg3 from "./../assets/slide3.jpg";
 import "./../components/styles/slider.css";
 function Slider() {
   return (
-    <Carousel infiniteLoop>
+    <Carousel infiniteLoop showIndicators={false}>
       <div>
         <img src={sImg2} style={{ filter: "brightness(0.6)" }} />
         <h1 className="legend">Life Is Short and </h1>

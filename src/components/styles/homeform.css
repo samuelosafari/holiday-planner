@@ -4,6 +4,9 @@
   border-right: 4px solid #c29d59;
   padding: 20px 30px;
   box-shadow: 0 0 30px #ccc;
+  position: relative;
+  bottom: 100px;
+  background-color: #fff;
 }
 
 .home-form__group input {

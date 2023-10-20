@@ -1,0 +1,35 @@
+/* font-family: "Titillium Web", sans-serif; */
+/* font-family: "Cormorant Garamond", serif; */
+
+.trending-title {
+  border-left: 3px solid #c29d59;
+  margin-bottom: 20px;
+}
+
+.trending-title h4 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #c29d59;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.trending-subtitle {
+  font-size: 3.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.trending-subtitle span {
+  font-weight: bold;
+}
+
+.trending-container {
+  margin: 30px;
+  /* box-shadow: 0 0 15px #ccc; */
+  padding: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -17,10 +17,17 @@ import ContactLocation from "./components/ContactLocation";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import HomeForm from "./components/HomeForm";
+import Trendingtours from "./components/Trendingtours";
+import DasharedLayout from "./pages/DasharedLayout";
+import Dashboard from "./pages/Dashboard";
+import DashTours from "./pages/DashTours";
+import DashBookings from "./pages/DashBookings";
+import DashSettings from "./pages/DashSettings";
+import Sidebar from "./components/Sidebar";
 function App() {
   return (
     // <>
-    //   <TourDetails />
+    //   <Trendingtours />
     // </>
 
     <Routes>
@@ -35,6 +42,12 @@ function App() {
         <Route path="addtestimony" element={<AddTestimony />}></Route>
         <Route path="tourdetail" element={<TourDetails />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
+      </Route>
+      <Route path="/dashboard" element={<DasharedLayout />}>
+        <Route index element={<Dashboard />}></Route>
+        <Route path="dashtours" element={<DashTours />}></Route>
+        <Route path="dashbookings" element={<DashBookings />}></Route>
+        <Route path="dashtsettings" element={<DashSettings />}></Route>
       </Route>
     </Routes>
   );
